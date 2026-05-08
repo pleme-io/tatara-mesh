@@ -1,0 +1,37 @@
+# Canonical worked example — openclaw on pleme-dev. Mirrors the
+# (defmesh …) form in theory/MESH.md §VI but in YAML so we can round-
+# trip through serde without TataraDomain.
+
+name: openclaw-mesh
+aplicacao: openclaw
+
+identity:
+  kind: spiffe
+  trust_domain: pleme.io
+  issuer: spire
+
+data_plane:
+  proxy: aresta
+  sidecar_mode: auto
+  l7: hanabi
+
+mtls: strict
+
+defaults:
+  retries: 3
+  retry_budget: 0.2
+  timeout: "30s"
+  slow_timeout: "5m"
+  circuit_breaker:
+    max_requests: 100
+    max_failures: 10
+    reset: "30s"
+
+observability:
+  traces: otel
+  metrics: prometheus
+  logs: json
+
+policy: contratos      # inherit from Aplicacao :contratos
+gateway: entrada       # inherit from Aplicacao :entrada
+saguao: true           # human edges via passaporte session
