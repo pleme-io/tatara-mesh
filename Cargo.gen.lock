@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "cargo_lock_sha256": "c853b375514eb77147e8cffea16f59c4caa20ccfb1df0a2153445038a4eb3f88",
+  "cargo_lock_sha256": "6e36f72df817b6606d173449412eab228e21f687003f559035036b11bc4e5ab7",
   "manifest_sha256": {
-    "Cargo.toml": "3f114e4a1ce5605f839c8c4d20804b6af3b3f24d93326b1c8809d59295ad4ec2"
+    "Cargo.toml": "95df8b92ee350816286b6de8245c3cd91f53823e80dda508d7df8e10732a761e"
   },
   "target_resolves": {
     "base": {
@@ -338,7 +338,7 @@
           "proc-macro"
         ]
       },
-      "tatara-mesh-0.1.1": {
+      "tatara-mesh-0.1.2": {
         "runtime_dependencies": [
           {
             "name": "serde",
@@ -517,7 +517,7 @@
     "syn-3.0.10": {
       "edition": "2021"
     },
-    "tatara-mesh-0.1.1": {
+    "tatara-mesh-0.1.2": {
       "edition": "2024",
       "lib_target": {
         "name": "tatara_mesh",
