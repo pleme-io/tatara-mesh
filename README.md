@@ -4,8 +4,8 @@ Typed `(defmesh …)` primitive for the pleme-io service mesh.
 
 This crate ships:
 
-- **`MeshSpec`** — top-level Rust struct mirroring the form in
-  `MESH.md` §VI (identity, data plane, mTLS posture, retry/timeout/CB
+- **`MeshSpec`** — top-level Rust struct for the `(defmesh …)`
+  form (identity, data plane, mTLS posture, retry/timeout/CB
   defaults, observability, policy/gateway sources, saguão
   integration).
 - **Validation** — fail-closed type-level invariants (retry-budget
