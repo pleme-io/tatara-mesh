@@ -1,11 +1,11 @@
 //! tatara-mesh — typed `(defmesh …)` primitive.
 //!
-//! Sprint **M4.1** of `theory/MESH-EXECUTION-PLAN.md`.
+//! Sprint **M4.1** of the mesh execution plan.
 //!
 //! # What this crate is
 //!
 //! The Rust types + validation that mechanically capture the
-//! `(defmesh …)` form documented in [`theory/MESH.md` §VI](https://github.com/pleme-io/theory/blob/main/MESH.md).
+//! `(defmesh …)` form.
 //! Consumers:
 //!
 //! - **`arch-synthesizer`** imports `MeshSpec`, runs
@@ -25,7 +25,7 @@
 //! # `#[derive(TataraDomain)]` is intentionally absent today
 //!
 //! The proc-macro lives in `tatara-lisp` and isn't yet stable across
-//! the fleet (per `theory/MESH-EXECUTION-PLAN.md` open question 6).
+//! the fleet.
 //! When it lands, add `#[derive(TataraDomain)]` + `#[tatara(keyword
 //! = "defmesh")]` to `MeshSpec` to enable Lisp authoring. Until then,
 //! consumers build `MeshSpec` from YAML or directly in Rust.
@@ -50,7 +50,7 @@ pub use validate::ValidateError;
 /// `(defmesh …)` — the typed mesh spec that renders to a concrete
 /// data + control plane on any of the supported backends.
 ///
-/// Top-level shape mirrors `theory/MESH.md` §VI: each named slot
+/// Top-level shape: each named slot
 /// corresponds to one Lisp `:keyword`.
 #[derive(Debug, Clone, Deserialize, Serialize)]
 #[serde(deny_unknown_fields)]

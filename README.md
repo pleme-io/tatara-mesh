@@ -1,7 +1,6 @@
 # tatara-mesh
 
-Typed `(defmesh …)` primitive for the pleme-io service mesh
-([`theory/MESH.md`](https://github.com/pleme-io/theory/blob/main/MESH.md)).
+Typed `(defmesh …)` primitive for the pleme-io service mesh.
 
 This crate ships:
 
@@ -14,9 +13,9 @@ This crate ships:
   timeout, CB max-failures ≤ max-requests, trust-domain shape).
 - **YAML round-trip** — `serde_yaml_ng`. Lisp-side authoring via
   `#[derive(TataraDomain)]` lands when the proc-macro stabilizes
-  fleet-wide (per `theory/MESH-EXECUTION-PLAN.md` open question 6).
+  fleet-wide.
 
-Sprint **M4.1** of [`MESH-EXECUTION-PLAN.md`](https://github.com/pleme-io/theory/blob/main/MESH-EXECUTION-PLAN.md).
+Sprint **M4.1** of the mesh execution plan.
 
 ## Usage
 

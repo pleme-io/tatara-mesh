@@ -1,5 +1,5 @@
 # Canonical worked example — openclaw on pleme-dev. Mirrors the
-# (defmesh …) form in theory/MESH.md §VI but in YAML so we can round-
+# (defmesh …) form but in YAML so we can round-
 # trip through serde without TataraDomain.
 
 name: openclaw-mesh

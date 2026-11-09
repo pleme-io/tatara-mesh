@@ -32,8 +32,7 @@ pub enum IdentityKind {
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize, Serialize, Default)]
 #[serde(rename_all = "kebab-case")]
 pub enum IssuerKind {
-    /// Vendor upstream SPIRE (the M1 default — see
-    /// `theory/MESH-EXECUTION-PLAN.md`).
+    /// Vendor upstream SPIRE (the M1 default).
     #[default]
     Spire,
     /// Future Rust-from-scratch SPIRE-equivalent (M5+).
